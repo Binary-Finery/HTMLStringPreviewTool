@@ -12,4 +12,9 @@
           android:title="share html"
           android:orderInCategory="100"
           app:showAsAction="never" tools:ignore="HardcodedText"/>
+
+    <item android:id="@+id/action_github"
+          android:title="view project on github"
+          android:orderInCategory="100"
+          app:showAsAction="never" tools:ignore="HardcodedText"/>
 </menu>

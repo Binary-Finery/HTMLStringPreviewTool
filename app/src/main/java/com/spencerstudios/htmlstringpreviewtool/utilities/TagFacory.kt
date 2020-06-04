@@ -25,12 +25,12 @@ private fun buildTag(ctx: Context, label: String, uid: Int): TextView {
     }
 }
 
-fun buildAllTags(ctx: Context, clickListener: View.OnClickListener, ll: LinearLayout) {
+fun setTagPresets(ctx: Context, clickListener: View.OnClickListener, ll: LinearLayout) {
     var id = 0
     for ((label, _) in tagMap()) {
         val tv = buildTag(ctx, label, id)
-        id++
         tv.setOnClickListener(clickListener)
         ll.addView(tv)
+        id++
     }
 }
