@@ -43,28 +43,44 @@
 
             </HorizontalScrollView>
 
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+            >
+
             <LinearLayout android:layout_width="match_parent"
                           android:layout_height="wrap_content"
-                          android:layout_marginTop="8dp"
-                          android:padding="16dp"
+                          android:layout_marginTop="11dp"
                           android:orientation="vertical"
                           android:background="@drawable/output_background">
 
                 <TextView
                         android:id="@+id/tv"
                         android:textSize="22sp"
+                        android:padding="16dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
 
             </LinearLayout>
 
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text=" output "
+                          android:layout_alignParentTop="true"
+                          android:background="#fff"
+                          android:textSize="14dp"
+                          android:layout_marginStart="8dp"
+                          tools:ignore="HardcodedText,SpUsage" android:fontFamily="@font/poppins_semibold"/>
+
+            </RelativeLayout>
 
             <TextView android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:textStyle="italic"
                       android:layout_marginTop="24dp"
                       android:layout_marginBottom="8dp"
-                      android:text="example usage:"
+                      android:text="example usage (Kotlin):"
                       android:textSize="12sp"
                       tools:ignore="HardcodedText"/>
 
